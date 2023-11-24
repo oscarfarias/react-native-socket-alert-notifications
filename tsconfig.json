@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2019"],           
+    "jsx": "react-native",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "allowJs": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"],
+      "tests": ["tests/*"],
+      "@components/*": ["src/components/*"],
+      "assets/*": ["./src/assets/*"],
+    },
+  },
+  "exclude": [
+    "node_modules", "babel.config.js", "metro.config.js"
+  ]
+}
